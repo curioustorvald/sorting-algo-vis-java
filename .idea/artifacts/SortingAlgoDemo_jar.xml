@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="SortingAlgoDemo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SortingAlgoDemo_jar</output-path>
+    <root id="root">
+      <element id="archive" name="SortingAlgoDemo.jar">
+        <element id="module-output" name="SortingAlgoDemo" />
+      </element>
+      <element id="library" level="project" name="lib" />
+      <element id="file-copy" path="$PROJECT_DIR$/config.txt" />
+      <element id="file-copy" path="$PROJECT_DIR$/LICENSE.md" />
+    </root>
+  </artifact>
+</component>

@@ -37,7 +37,7 @@ public class StateFancyIntro extends BasicGameState {
         );
         drawQueue.add(new DrawActionDef((Graphics g, int order, int timer, float execTime) ->
                                                 layOutBars      (g, 2, timer, execTime),
-                                               SortDemo.dataSize / 2 * Math.max(SortDemo.updateInterval, 1))
+                                               SortDemo.dataSize * 2 / 3 * Math.max(SortDemo.updateInterval, 1))
         );
         drawQueue.add(new DrawActionDef((Graphics g, int order, int timer, float execTime) ->
                                                 wait            (g, 3, timer, execTime), 600)
@@ -164,6 +164,8 @@ public class StateFancyIntro extends BasicGameState {
                     barHeight
             );
         }
+
+        drawDivider(g, order, 1, 1);
     }
 
     void drawTitle(Graphics g, int order, int timer, float execTime) {

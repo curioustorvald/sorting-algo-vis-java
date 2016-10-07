@@ -5,6 +5,7 @@ import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -26,7 +27,7 @@ public class SortDemo extends StateBasedGame {
     // if config file cannot be loaded, these values will be used.
     static int WIDTH = 960;
     static int HEIGHT = 720;
-    static int updateInterval = 80;
+    static int updateInterval = 100;
     static int dataSize = 50;
     private static boolean nointro = false;
     static boolean doAA = true;
@@ -78,6 +79,9 @@ public class SortDemo extends StateBasedGame {
     }
 
     public static void main(String[] args) {
+        System.setProperty("java.library.path", "lib");
+        System.setProperty("org.lwjgl.librarypath", new File("lib").getAbsolutePath());
+
         try {
             appgc = new AppGameContainer(new SortDemo());
             appgc.setShowFPS(false);

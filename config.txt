@@ -1,6 +1,6 @@
 width=960
 height=720
-interval=80
+interval=100
 dataSize=50
 nointro=false
 smoothGraphics=true

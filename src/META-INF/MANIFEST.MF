@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: lib/lwjgl.jar lib/slick.jar lib/lwjgl_util.jar
+Main-Class: net.torvald.sortdemo.SortDemo
+
