@@ -60,7 +60,7 @@ public class StateDemoMain extends BasicGameState {
     }
 
     static String title = "Sorting Race";
-    static String subtitle = "of " + dataSize + " random numbers";
+    static String subtitle = "of " + dataSize + " " + SortDemo.modeDesc.get(SortDemo.mode);
 
     static Color labelBoxCol = new Color(0x77000000);
     static Color dividerCol = new Color(0x888888);

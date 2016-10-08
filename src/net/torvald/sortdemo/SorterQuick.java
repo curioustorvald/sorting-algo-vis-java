@@ -90,9 +90,6 @@ public class SorterQuick implements Sorter {
                         if (data[j] <= x) {
                             i++;
                             swap(i, j);
-
-
-                            marking[i] = ColorMarking.PIVOT;
                         }
                         j++;
                     }
@@ -117,7 +114,7 @@ public class SorterQuick implements Sorter {
                 if (i >= 0) marking[i] = ColorMarking.PIVOT;
 
 
-                marking[right] = ColorMarking.PIVOT;
+                //marking[right] = ColorMarking.PIVOT;
                 if (pivot != UNASSIGEND) marking[pivot] = ColorMarking.DONE;
 
                 stackPivots.forEach((Integer pvt) -> {

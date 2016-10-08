@@ -1,6 +1,12 @@
 width=960
 height=720
-interval=100
-dataSize=50
+
+interval=80
+dataSize=100
+
 nointro=false
+
 smoothGraphics=true
+
+# possible arrangements: 'random', 'reverse', 'sorted', 'almost'
+arrangement=random
