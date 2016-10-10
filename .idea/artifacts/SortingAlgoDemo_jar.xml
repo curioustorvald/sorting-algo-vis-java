@@ -8,6 +8,8 @@
       <element id="library" level="project" name="lib" />
       <element id="file-copy" path="$PROJECT_DIR$/config.txt" />
       <element id="file-copy" path="$PROJECT_DIR$/LICENSE.md" />
+      <element id="file-copy" path="$PROJECT_DIR$/RUN.bat" />
+      <element id="file-copy" path="$PROJECT_DIR$/RUN.sh" />
     </root>
   </artifact>
 </component>
